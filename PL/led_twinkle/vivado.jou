@@ -1,0 +1,52 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Apr 16 09:32:08 2023
+# Process ID: 28288
+# Current directory: E:/ZYNQcode/PL/led_twinkle
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3468 E:\ZYNQcode\PL\led_twinkle\led_twinkle.xpr
+# Log file: E:/ZYNQcode/PL/led_twinkle/vivado.log
+# Journal file: E:/ZYNQcode/PL/led_twinkle\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/ZYNQcode/PL/led_twinkle/led_twinkle.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+place_ports sys_clk U18
+set_property IOSTANDARD LVCMOS33 [get_ports [list sys_clk]]
+place_ports sys_rst_n N16
+set_property IOSTANDARD LVCMOS33 [get_ports [list sys_rst_n]]
+place_ports {led[0]} H15
+place_ports {led[1]} L15
+set_property IOSTANDARD LVCMOS33 [get_ports [list {led[1]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {led[0]}]]
+file mkdir E:/ZYNQcode/PL/led_twinkle/led_twinkle.srcs/constrs_1/new
+close [ open E:/ZYNQcode/PL/led_twinkle/led_twinkle.srcs/constrs_1/new/led_twinkle.xdc w ]
+add_files -fileset constrs_1 E:/ZYNQcode/PL/led_twinkle/led_twinkle.srcs/constrs_1/new/led_twinkle.xdc
+set_property target_constrs_file E:/ZYNQcode/PL/led_twinkle/led_twinkle.srcs/constrs_1/new/led_twinkle.xdc [current_fileset -constrset]
+save_constraints -force
+close_design
+synth_design -rtl -name rtl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/ZYNQcode/PL/led_twinkle/led_twinkle.runs/impl_1/led_twinkle.bit} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/ZYNQcode/PL/led_twinkle/led_twinkle.runs/impl_1/led_twinkle.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+open_run impl_1
+close_design
+close_design
+open_run impl_1
+close_design
+synth_design -rtl -name rtl_1
+open_run impl_1
+close_design
+open_run impl_1

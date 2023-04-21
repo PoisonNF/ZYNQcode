@@ -1,0 +1,32 @@
+/*
+ * main.c
+ *
+ *  Created on: 2023年4月21日
+ *      Author: bcl
+ */
+
+#include <stdio.h>
+
+
+#define GPIO_DEVICE_ID  	XPAR_XGPIOPS_0_DEVICE_ID
+
+
+int main()
+{
+	printf("GPIO MIO TEST\r\n");
+
+	//初始化GPIO的驱动
+	ConfigPtr = XGpioPs_LookupConfig(GPIO_DEVICE_ID);
+	Status = XGpioPs_CfgInitialize(&Gpio, ConfigPtr,
+					ConfigPtr->BaseAddr);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+	//把GPIO设置为输出模式
+
+	//设置输出使能
+
+	//写数据到GPIO的引脚
+
+	return 0;
+}

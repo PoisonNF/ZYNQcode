@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;GPIO_EMIO&apos;" deleteContents="true" description="Delete resource &apos;GPIO_EMIO&apos;" element1="/GPIO_EMIO" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1682065001288"/>&#x0A;<refactoring comment="Delete resource &apos;GPIO_EMIO_bsp&apos;" deleteContents="true" description="Delete resource &apos;GPIO_EMIO_bsp&apos;" element1="/GPIO_EMIO_bsp" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1682065026811"/>
+</session>

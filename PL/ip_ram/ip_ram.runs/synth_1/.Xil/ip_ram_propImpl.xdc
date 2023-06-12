@@ -1,0 +1,5 @@
+set_property SRC_FILE_INFO {cfile:D:/ZYNQcode/PL/ip_ram/ip_ram.srcs/constrs_1/new/ip_ram.xdc rfile:../../../ip_ram.srcs/constrs_1/new/ip_ram.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:3 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN U18 [get_ports sys_clk]
+set_property src_info {type:XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN P19 [get_ports sys_rst_n]

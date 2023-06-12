@@ -1,4 +1,4 @@
-17:35:30 **** Auto Build of configuration Debug for project GPIO_EMIO ****
+20:39:25 **** Build of configuration Debug for project GPIO_EMIO ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -19,5 +19,5 @@ arm-none-eabi-size GPIO_EMIO.elf  |tee "GPIO_EMIO.elf.size"
 'Finished building: GPIO_EMIO.elf.size'
 ' '
 
-17:35:30 Build Finished (took 451ms)
+20:39:26 Build Finished (took 499ms)
 

@@ -1,0 +1,5 @@
+set_property SRC_FILE_INFO {cfile:D:/ZYNQcode/PL/ip_fifo/ip_fifo.srcs/constrs_1/new/ip_fifo.xdc rfile:../../../ip_fifo.srcs/constrs_1/new/ip_fifo.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN U18 IOSTANDARD LVCMOS33} [get_ports sys_clk]
+set_property src_info {type:XDC file:1 line:5 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN N16 IOSTANDARD LVCMOS33} [get_ports sys_rst_n]

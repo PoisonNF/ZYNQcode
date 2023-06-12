@@ -1,0 +1,15 @@
+/*
+ * main.c
+ *
+ *  Created on: 2023Äê4ÔÂ22ÈÕ
+ *      Author: bcl
+ */
+
+#include <stdio.h>
+
+
+int main()
+{
+
+	return 0;
+}

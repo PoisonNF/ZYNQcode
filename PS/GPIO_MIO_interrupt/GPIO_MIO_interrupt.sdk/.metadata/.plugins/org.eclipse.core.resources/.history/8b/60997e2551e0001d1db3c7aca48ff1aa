@@ -1,0 +1,134 @@
+/*
+ * main.c
+ *
+ *  Created on: 2023年4月21日
+ *      Author: bcl
+ */
+
+#include <stdio.h>
+#include "xparameters.h"
+#include "xgpiops.h"
+#include "xscugic.h"
+#include "xstatus.h"
+#include "xplatform_info.h"
+#include <xil_printf.h>
+#include "sleep.h"
+
+//设备ID
+#define GPIO_DEVICE_ID  	XPAR_XGPIOPS_0_DEVICE_ID
+#define INTC_DEVICE_ID		XPAR_SCUGIC_SINGLE_DEVICE_ID
+
+//GPIO中断ID #52
+#define GPIO_INTERRUPT_ID	XPAR_XGPIOPS_0_INTR
+
+#define GPIO_MIO_LED0		0
+#define GPIO_MIO_KEY		11
+
+int SetupInterruptSystem(XScuGic *GicInstancePtr, XGpioPs *Gpio, u16 GpioIntrId);
+void IntrHandler(void *callback_ref);
+
+XGpioPs Gpio; //GPIO实例
+XGpioPs_Config *ConfigPtr;
+
+XScuGic Intc; //中断控制器实例
+XScuGic_Config *IntcConfig;
+
+u8 flag;
+u8 LED_value;
+
+int main()
+{
+	printf("GPIO MIO TEST\r\n");
+
+	//初始化GPIO的驱动
+
+	//根据设备ID,查找器件配置信息
+	ConfigPtr = XGpioPs_LookupConfig(GPIO_DEVICE_ID);
+
+	//初始化GPIO驱动
+	XGpioPs_CfgInitialize(&Gpio, ConfigPtr,
+					ConfigPtr->BaseAddr);
+
+	//把GPIO设置为输出模式
+	XGpioPs_SetDirectionPin(&Gpio,GPIO_MIO_LED0,1);
+
+	//设置输出使能
+	XGpioPs_SetOutputEnablePin(&Gpio,GPIO_MIO_LED0,1);
+
+	//设置按键为输入模式
+	XGpioPs_SetDirectionPin(&Gpio,GPIO_MIO_KEY,0);
+
+	//配置中断
+	SetupInterruptSystem(&Intc, &Gpio, GPIO_INTERRUPT_ID);
+
+	while(1)
+	{
+//		if(flag)
+//		{
+//			flag = 0;
+//
+//			//LED状态取反
+//			LED_value = ~ LED_value;
+//
+//			usleep(200000);
+//
+//			XGpioPs_WritePin(&Gpio,GPIO_MIO_LED0,LED_value);
+//
+//			XGpioPs_IntrEnablePin(&Gpio,GPIO_MIO_KEY);
+//		}
+	}
+
+	return 0;
+}
+
+int SetupInterruptSystem(XScuGic *GicInstancePtr, XGpioPs *Gpio,
+				u16 GpioIntrId)
+{
+
+	int status;
+	    XScuGic_Config *IntcConfig;     //中断控制器配置信息
+
+	    //查找中断控制器配置信息并初始化中断控制器驱动
+	    IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+	    if (NULL == IntcConfig) {
+	        return XST_FAILURE;
+	    }
+
+	    status = XScuGic_CfgInitialize(&Intc, IntcConfig,
+	            IntcConfig->CpuBaseAddress);
+	    if (status != XST_SUCCESS) {
+	        return XST_FAILURE;
+	    }
+
+	    //设置并使能中断异常
+	    Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
+	            (Xil_ExceptionHandler) XScuGic_InterruptHandler, &Intc);
+	    Xil_ExceptionEnable();
+
+	    //为中断设置中断处理函数
+	    status = XScuGic_Connect(&Intc, GpioIntrId,
+	            (Xil_ExceptionHandler) IntrHandler, (void *) Gpio);
+	    if (status != XST_SUCCESS) {
+	        return status;
+	    }
+
+	    //使能来自于Gpio器件的中断
+	    XScuGic_Enable(&Intc, GpioIntrId);
+
+	    //设置KEY按键的中断类型为下降沿中断
+	    XGpioPs_SetIntrTypePin(Gpio, GPIO_MIO_KEY, XGPIOPS_IRQ_TYPE_EDGE_FALLING);
+
+	    //使能按键KEY中断
+	    XGpioPs_IntrEnablePin(Gpio, GPIO_MIO_KEY);
+
+	    return XST_SUCCESS;
+}
+
+void IntrHandler(void *callback_ref)
+{
+	//flag = 1;
+	XGpioPs *gpio = (XGpioPs *) callback_ref;
+
+	printf("interrupt!\r\n");
+	//XGpioPs_IntrDisablePin(&Gpio,GPIO_MIO_KEY);
+}

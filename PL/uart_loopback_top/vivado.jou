@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed May  3 15:02:48 2023
+# Process ID: 20768
+# Current directory: D:/ZYNQcode/PL/uart_loopback_top
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8616 D:\ZYNQcode\PL\uart_loopback_top\uart_loopback_top.xpr
+# Log file: D:/ZYNQcode/PL/uart_loopback_top/vivado.log
+# Journal file: D:/ZYNQcode/PL/uart_loopback_top\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/ZYNQcode/PL/uart_loopback_top/uart_loopback_top.xpr
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/ZYNQcode/PL/uart_loopback_top/uart_loopback_top.runs/impl_1/uart_loopback_top.bit} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {D:/ZYNQcode/PL/uart_loopback_top/uart_loopback_top.runs/impl_1/uart_loopback_top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]

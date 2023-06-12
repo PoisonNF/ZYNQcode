@@ -1,0 +1,9 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+E:/ZYNQcode/PL/key_beep/key_beep.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+E:/ZYNQcode/PL/key_beep/key_beep.srcs/sim_1/new/tb_key_beep.v,1682254949,verilog,,,,tb_key_beep,,,,,,,,
+E:/ZYNQcode/PL/key_beep/key_beep.srcs/sources_1/new/key_control.v,1682253276,verilog,,E:/ZYNQcode/PL/key_beep/key_beep.srcs/sources_1/new/key_judge.v,,key_control,,,,,,,,
+E:/ZYNQcode/PL/key_beep/key_beep.srcs/sources_1/new/key_judge.v,1682254115,verilog,,E:/ZYNQcode/PL/key_beep/key_beep.srcs/sources_1/new/top_key_beep.v,,key_judge,,,,,,,,
+E:/ZYNQcode/PL/key_beep/key_beep.srcs/sources_1/new/top_key_beep.v,1682253255,verilog,,E:/ZYNQcode/PL/key_beep/key_beep.srcs/sim_1/new/tb_key_beep.v,,top_key_beep,,,,,,,,

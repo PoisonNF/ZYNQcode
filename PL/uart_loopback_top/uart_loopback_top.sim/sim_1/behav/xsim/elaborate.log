@@ -1,0 +1,20 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: F:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 583da4884f254e3c91a7c81008fd7be1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_uart_loopback_top_behav xil_defaultlib.tb_uart_loopback_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/ZYNQcode/PL/uart_loopback_top/uart_loopback_top.srcs/sources_1/new/uart_loopback_top.v" Line 1. Module uart_loopback_top doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/ZYNQcode/PL/uart_loopback_top/uart_loopback_top.srcs/sources_1/new/uart_recv.v" Line 1. Module uart_recv_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/ZYNQcode/PL/uart_loopback_top/uart_loopback_top.srcs/sources_1/new/uart_send.v" Line 1. Module uart_send_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/ZYNQcode/PL/uart_loopback_top/uart_loopback_top.srcs/sources_1/new/uart_loop.v" Line 1. Module uart_loop doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.uart_recv_default
+Compiling module xil_defaultlib.uart_send_default
+Compiling module xil_defaultlib.uart_loop
+Compiling module xil_defaultlib.uart_loopback_top
+Compiling module xil_defaultlib.tb_uart_loopback_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_uart_loopback_top_behav

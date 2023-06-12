@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_key_beep_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_key_beep" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="649000001fs"></ZoomEndTime>
+      <Cursor1Time time="229500000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="142"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/tb_key_beep/sys_clk" type="logic">
+      <obj_property name="ElementShortName">sys_clk</obj_property>
+      <obj_property name="ObjectShortName">sys_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_key_beep/sys_rst_n" type="logic">
+      <obj_property name="ElementShortName">sys_rst_n</obj_property>
+      <obj_property name="ObjectShortName">sys_rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_key_beep/key" type="logic">
+      <obj_property name="ElementShortName">key</obj_property>
+      <obj_property name="ObjectShortName">key</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_key_beep/u_top_key_beep/u_key_judge/key_reg" type="logic">
+      <obj_property name="ElementShortName">key_reg</obj_property>
+      <obj_property name="ObjectShortName">key_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_key_beep/u_top_key_beep/u_key_judge/key_value" type="logic">
+      <obj_property name="ElementShortName">key_value</obj_property>
+      <obj_property name="ObjectShortName">key_value</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_key_beep/u_top_key_beep/u_key_judge/key_flag" type="logic">
+      <obj_property name="ElementShortName">key_flag</obj_property>
+      <obj_property name="ObjectShortName">key_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_key_beep/beep" type="logic">
+      <obj_property name="ElementShortName">beep</obj_property>
+      <obj_property name="ObjectShortName">beep</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_key_beep/u_top_key_beep/u_key_judge/cnt" type="array">
+      <obj_property name="ElementShortName">cnt[20:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt[20:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

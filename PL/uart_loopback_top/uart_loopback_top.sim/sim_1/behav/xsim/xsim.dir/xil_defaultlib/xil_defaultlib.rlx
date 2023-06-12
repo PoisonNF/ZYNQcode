@@ -1,0 +1,10 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/ZYNQcode/PL/uart_loopback_top/uart_loopback_top.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+D:/ZYNQcode/PL/uart_loopback_top/uart_loopback_top.srcs/sim_1/new/tb_uart_loopback_top.v,1682854349,verilog,,,,tb_uart_loopback_top,,,,,,,,
+D:/ZYNQcode/PL/uart_loopback_top/uart_loopback_top.srcs/sources_1/new/uart_loop.v,1682844812,verilog,,D:/ZYNQcode/PL/uart_loopback_top/uart_loopback_top.srcs/sources_1/new/uart_loopback_top.v,,uart_loop,,,,,,,,
+D:/ZYNQcode/PL/uart_loopback_top/uart_loopback_top.srcs/sources_1/new/uart_loopback_top.v,1682844218,verilog,,D:/ZYNQcode/PL/uart_loopback_top/uart_loopback_top.srcs/sources_1/new/uart_recv.v,,uart_loopback_top,,,,,,,,
+D:/ZYNQcode/PL/uart_loopback_top/uart_loopback_top.srcs/sources_1/new/uart_recv.v,1682854229,verilog,,D:/ZYNQcode/PL/uart_loopback_top/uart_loopback_top.srcs/sources_1/new/uart_send.v,,uart_recv,,,,,,,,
+D:/ZYNQcode/PL/uart_loopback_top/uart_loopback_top.srcs/sources_1/new/uart_send.v,1682853837,verilog,,D:/ZYNQcode/PL/uart_loopback_top/uart_loopback_top.srcs/sim_1/new/tb_uart_loopback_top.v,,uart_send,,,,,,,,

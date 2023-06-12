@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Apr 25 14:45:08 2023
+# Process ID: 5244
+# Current directory: E:/ZYNQcode/PS/GPIO_MIO_interrupt
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20520 E:\ZYNQcode\PS\GPIO_MIO_interrupt\GPIO_MIO_interrupt.xpr
+# Log file: E:/ZYNQcode/PS/GPIO_MIO_interrupt/vivado.log
+# Journal file: E:/ZYNQcode/PS/GPIO_MIO_interrupt\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/ZYNQcode/PS/GPIO_MIO_interrupt/GPIO_MIO_interrupt.xpr
+launch_sdk -workspace E:/ZYNQcode/PS/GPIO_MIO_interrupt/GPIO_MIO_interrupt.sdk -hwspec E:/ZYNQcode/PS/GPIO_MIO_interrupt/GPIO_MIO_interrupt.sdk/system_wrapper.hdf
+update_compile_order -fileset sources_1
+launch_sdk -workspace E:/ZYNQcode/PS/GPIO_MIO_interrupt/GPIO_MIO_interrupt.sdk -hwspec E:/ZYNQcode/PS/GPIO_MIO_interrupt/GPIO_MIO_interrupt.sdk/system_wrapper.hdf

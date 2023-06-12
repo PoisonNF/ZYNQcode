@@ -1,0 +1,13 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/ZYNQcode/PL/cymometer_top/cymometer_top.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+D:/ZYNQcode/PL/cymometer_top/cymometer_top.srcs/sim_1/new/tb_cymometer.v,1683114916,verilog,,,,tb_cymometer,,,../../../../cymometer_top.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/ZYNQcode/PL/cymometer_top/cymometer_top.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,1683100086,verilog,,D:/ZYNQcode/PL/cymometer_top/cymometer_top.srcs/sources_1/new/ctrl.v,,clk_wiz_0,,,../../../../cymometer_top.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/ZYNQcode/PL/cymometer_top/cymometer_top.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,1683100086,verilog,,D:/ZYNQcode/PL/cymometer_top/cymometer_top.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,,clk_wiz_0_clk_wiz,,,../../../../cymometer_top.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/ZYNQcode/PL/cymometer_top/cymometer_top.srcs/sources_1/ip/ila_0/sim/ila_0.v,1683111005,verilog,,D:/ZYNQcode/PL/cymometer_top/cymometer_top.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,,ila_0,,,../../../../cymometer_top.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/ZYNQcode/PL/cymometer_top/cymometer_top.srcs/sources_1/new/ctrl.v,1683100750,verilog,,D:/ZYNQcode/PL/cymometer_top/cymometer_top.srcs/sources_1/new/cymometer.v,,ctrl,,,../../../../cymometer_top.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/ZYNQcode/PL/cymometer_top/cymometer_top.srcs/sources_1/new/cymometer.v,1683115127,verilog,,D:/ZYNQcode/PL/cymometer_top/cymometer_top.srcs/sources_1/new/cymometer_top.v,,cymometer,,,../../../../cymometer_top.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/ZYNQcode/PL/cymometer_top/cymometer_top.srcs/sources_1/new/cymometer_top.v,1683114448,verilog,,D:/ZYNQcode/PL/cymometer_top/cymometer_top.srcs/sources_1/new/uart_send.v,,cymometer_top,,,../../../../cymometer_top.srcs/sources_1/ip/clk_wiz_0,,,,,
+D:/ZYNQcode/PL/cymometer_top/cymometer_top.srcs/sources_1/new/uart_send.v,1683099319,verilog,,D:/ZYNQcode/PL/cymometer_top/cymometer_top.srcs/sim_1/new/tb_cymometer.v,,uart_send,,,../../../../cymometer_top.srcs/sources_1/ip/clk_wiz_0,,,,,

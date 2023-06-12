@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# 
+# Start of session at: Sat Apr 22 17:32:39 2023
+# Process ID: 28000
+# Current directory: E:/ZYNQcode/PS/GPIO_AXI/GPIO_AXI.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: E:/ZYNQcode/PS/GPIO_AXI/GPIO_AXI.sdk/webtalk/webtalk.log
+# Journal file: E:/ZYNQcode/PS/GPIO_AXI/GPIO_AXI.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl
